@@ -5,4 +5,5 @@ int main()
     scanf("%f",&r);
     printf("%.2f
 %.2f",3.14*r*r,6.28*r);
+    
 }
