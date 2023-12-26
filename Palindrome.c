@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main(){
-    int n,i,n1,res=0;
+    int n,res = 0 ,n1,i;
     scanf("%d",&n);
-    i=n;
+    i = n;
     while(n!=0){
-        n1=n%10;
-        res = (res*10)+n1;
-        n=n/10;
+        n1=n%10;//1  2  1
+        res = res * 10 + n1 ;//1 12
+        n/=10; //12
     }
-    if(i==res)
-        printf("Palindrome");
+    if( res == i)
+    printf("True");
     else
-    printf("Not Palindrome");
+    printf("False");
 }
